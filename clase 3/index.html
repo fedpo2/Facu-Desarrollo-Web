@@ -1,22 +1,244 @@
 <!doctype html>
 <html>
     <head>
-        <title>Clase 3 - Articulo</title>
-        <!-- Al finalizar la revisión de este contenido, ya está en condiciones de realizar el TP propuesto en el que tendrá que completar la noticia seleccionada previamente y replicar el documento HTML que posea el mismo contenido que la noticia (título, subtítulos, fecha, texto, imágenes, links, etc.) Se tendra el cuenta la implementacion de etiquetas complejas y la utilizacion de formulario de suscripcion.
-
-        https://www.nytimes.com/es/2025/04/21/espanol/mundo/muere-papa-francisco.html
-        -->
-
+        <title>Clase 3 - Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
+    <!--https://www.nytimes.com/es/2025/04/21/espanol/mundo/quien-sera-nuevo-papa.html -->
     <body>
-        <div style="display: flex; align-content: center; width: fit-content;">
-        <form style="border: 1px solid black; padding: 10px;">
-            <p><b>Subscribirse al diario</b></p>
-            <label for="Email">
-                <input type="email" placeholder="Ingresa un email"></input>
-            </label>
-        </form>
+        <div style="display: flex; flex-flow: row wrap">
+            <!-- Aca hay una nav para la navegacion -->
+            <aside
+                style="
+                    background-color: mintcream;
+                    padding: 1rem;
+                    padding-top: 0;
+                    height: fit-content;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                    /* en realidad el box-shadow es sencillo de usar
+                        el valor 1 es el offset horizontal
+                        el segundo offset vertical
+                        el tercero es el radio del degrade y lo ultimo el color */
+                    position: sticky;
+                    top: 10px;
+                "
+            >
+                <h3>
+                    Navegación
+                    <hr />
+                </h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#intro">Introducción</a>
+                        </li>
+                        <li>
+                            <a href="#pierbattista">Pierbattista Pizzaballa</a>
+                        </li>
+                        <li>
+                            <a href="#parolin">Pietro Parolin</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- Aca empieza el articulo -->
+            <div
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    align-items: stretch;
+                    max-width: 60vw;
+                    margin: 0 auto;
+                "
+            >
+                <div
+                    style="border-bottom: 1px solid black; padding-bottom: 1rem"
+                >
+                    <h1 style="text-align: center">Articulo a copiado</h1>
+                    <a
+                        href="https://www.nytimes.com/es/2025/04/21/espanol/mundo/quien-sera-nuevo-papa.html"
+                        style="text-align: center"
+                        >https://www.nytimes.com/es/2025/04/21/espanol/mundo/quien-sera-nuevo-papa.html</a
+                    >
+                </div>
 
+                <div style="text-align: center">
+                    <h1
+                        style="
+                            font-family:
+                                &quot;Times New Roman&quot;, Times, serif;
+                        "
+                    >
+                        <i
+                            >¿Quién será el próximo papa? He aquí algunos
+                            posibles contendientes</i
+                        >
+                    </h1>
+                    <p>
+                        Algunos de los nombres que se han citado podrían basarse
+                        en la agenda progresista de Francisco, mientras que
+                        otros representarían un regreso a un estilo más
+                        tradicional.
+                    </p>
+                </div>
+
+                <div style="padding: 2%">
+                    <button>Compartir</button>
+                    <button>BookMark</button>
+                </div>
+                <img
+                    src="https://static01.nyt.com/images/2025/02/21/espanol/21pope-successors-top-sub-tmqc-ES-copy1/21pope-successors-top-sub-tmqc-jumbo.jpg?quality=75&auto=webp"
+                />
+                <figcaption>
+                    Fieles católicos reunidos para una misa presidida por el
+                    papa Francisco en la Plaza de San Pedro de Ciudad del
+                    Vaticano en febrero de 2025.
+                    <sub>Remo Casilli/Reuters</sub>
+                </figcaption>
+                <p id="intro">
+                    <b
+                        >Por Emma Bubola, Elisabetta Povoledo, Gaia Pianigiani y
+                        Neil MacFarquhar</b
+                    ><br />
+                    <!-- Use el br porque necesitaba el linebreak de bloque-->
+                    <small>21 de abril de 2025</small>
+                </p>
+                <p>
+                    Las conjeturas sobre quién será el próximo papa de la
+                    Iglesia católica romana a menudo resultan imprecisas. Antes
+                    de la elección del papa Francisco en 2013, muchas casas de
+                    apuestas ni siquiera lo contaban entre los favoritos.
+                </p>
+                <p>
+                    Esta vez, las predicciones se complican aún más porque
+                    Francisco hizo muchos nombramientos en un periodo de tiempo
+                    relativamente corto durante su mandato, diversificando el
+                    Colegio Cardenalicio y haciendo más difícil identificar
+                    movimientos y facciones dentro del grupo.
+                </p>
+                <p>
+                    Aun así, el debate sobre los posibles nombres comenzó hace
+                    tiempo tras los muros del Vaticano, y los observadores
+                    predicen varias posibilidades.
+                </p>
+                <p>
+                    Se considera probable que algunos se basen en la agenda
+                    progresista de Francisco, mientras que otros representarían
+                    un regreso a un estilo más tradicional. Los expertos también
+                    sugieren que el Colegio podría favorecer a un prelado con
+                    experiencia en las complejidades de las relaciones
+                    internacionales.
+                </p>
+                <p>He aquí algunos de los contendientes.</p>
+                <h2 id="pierbattista">
+                    <b> Pierbattista Pizzaballa </b>
+                </h2>
+                <p>
+                    Pierbattista Pizzaballa, italiano de 60 años que es el
+                    máximo responsable del Vaticano para asuntos de Medio
+                    Oriente, es considerado como un posible favorito. Aunque se
+                    convirtió en cardenal apenas en 2023, su experiencia en una
+                    de las zonas de conflicto más acaloradas del mundo lo ayudó
+                    a destacar.
+                </p>
+                <img
+                    src="https://static01.nyt.com/images/2025/02/21/espanol/00pope-successors-p-hzck-ES-copy1/00pope-successors-p-hzck-jumbo.jpg?quality=75&auto=webp"
+                />
+                <figcaption>
+                    El cardenal Pierbattista Pizzaballa en la ciudad cisjordana
+                    de Belén en diciembre. Ha pasado la mayor parte de su
+                    carrera en Medio Oriente.
+                    <sub>Foto de consorcio por Alaa Badarneh</sub>
+                </figcaption>
+                <p>
+                    El cardenal Pizzaballa sería el primer papa italiano desde
+                    Juan Pablo I en 1978, pero los expertos afirman que también
+                    se le considera una figura internacional y alejada de la
+                    política vaticana, ya que ha pasado gran parte de su carrera
+                    en Jerusalén. Por lo general, también se ha mantenido
+                    alejado de las polémicas sobre doctrina, lo que, según los
+                    expertos, podría ayudarle a conseguir la mayoría de dos
+                    tercios necesaria en el Colegio Cardenalicio, aunque algunos
+                    piensan que podría considerársele demasiado joven para el
+                    cargo.
+                </p>
+                <hr />
+                <h2 id="parolin">
+                    <b>Pietro Parolin</b>
+                </h2>
+                <p>
+                    El cardenal Pietro Parolin, de 70 años, ha sido el segundo
+                    al mando del papa Francisco desde 2013, cuando Francisco lo
+                    nombró secretario de Estado. En ese cargo, el cardenal se
+                    ocupa de supervisar los asuntos internos de la Iglesia y de
+                    guiar la política exterior.
+                </p>
+                <p>
+                    El cardenal Parolin, italiano de voz y modales suaves, está
+                    profundamente familiarizado con la curia, la administración
+                    central de la Iglesia, así como con la amplia red
+                    internacional del Vaticano, ya que ha trabajado durante más
+                    de 20 años como diplomático y subsecretario del organismo
+                    con sede en el Vaticano que supervisa sus relaciones
+                    internacionales.
+                </p>
+                <img
+                    src="https://static01.nyt.com/images/2025/02/21/espanol/00pope-successors-Parolin-vztc-ES-copy1/00pope-successors-Parolin-vztc-jumbo.jpg?quality=75&auto=webp"
+                />
+                <p>
+                    El cardenal Pietro Parolin dirigiéndose a la Asamblea
+                    General de las Naciones Unidas, en Nueva York, en septiembre
+                    de 2024.
+                    <sub>Dave Sanders para The New York Times</sub>
+                </p>
+                <p>
+                    Parolin habla con fluidez inglés, francés, italiano y
+                    español, y ha intervenido en conferencias internacionales
+                    sobre el conflicto palestino-israelí, el cambio climático y
+                    la trata de personas.
+                </p>
+                <p>
+                    También es un experto en Asia, y los observadores del
+                    Vaticano lo consideran el cerebro detrás de los progresos
+                    que el Vaticano ha logrado en los últimos años en la
+                    construcción de relaciones con China y Vietnam.
+                </p>
+            </div>
+
+            <!-- Aca esta el form para suscribirse -->
+            <aside
+                style="
+                    background-color: mintcream;
+                    padding: 1rem;
+                    padding-top: 0;
+                    height: fit-content;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                    display: sticky;
+                    top: 10px;
+                "
+            >
+                <h3>
+                    Suscríbete a nuestro diario
+                    <hr />
+                </h3>
+                <form>
+                    <div style="margin-bottom: 1rem">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" />
+                    </div>
+                    <div style="margin-bottom: 1rem">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+                    <div style="margin-bottom: 1rem">
+                        <input type="checkbox" id="terminos" name="terminos" />
+                        <label for="terminos"
+                            >Acepto los términos y condiciones</label
+                        >
+                    </div>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </aside>
         </div>
     </body>
 </html>
