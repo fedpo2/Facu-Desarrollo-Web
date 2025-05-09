@@ -72,10 +72,10 @@
 
                             <section id="introduccion"><h2 class="section-title">Introduction</h2></section>
                             <p class="lh-1">
-                            Last month I published <a class="inherit-anchor underline link-highligt" >Engineering Ubuntu For The Next 20 Years,</a> which outlines four key themes for how I intend to evolve Ubuntu in the coming years. In this post, I’ll focus on “Modernisation”. There are many areas we could look to modernise in Ubuntu: we could focus on the graphical shell experience, the virtualisation stack, core system utilities, default shell utilities, etc.
+                            Last month I published <a class="inherit-anchor underline link-highligt" href="https://jnsgr.uk/2025/02/engineering-ubuntu-for-the-next-20-years/">Engineering Ubuntu For The Next 20 Years,</a> which outlines four key themes for how I intend to evolve Ubuntu in the coming years. In this post, I’ll focus on “Modernisation”. There are many areas we could look to modernise in Ubuntu: we could focus on the graphical shell experience, the virtualisation stack, core system utilities, default shell utilities, etc.
                             </p>
                             <p class="lh-1">
-                            Over the years, projects like GNU Coreutils have been instrumental in shaping the Unix-like experience that Ubuntu and other Linux distributions ship to millions of users. According to the GNU <a class="inherit-anchor underline link-highligt">website</a>:
+                            Over the years, projects like GNU Coreutils have been instrumental in shaping the Unix-like experience that Ubuntu and other Linux distributions ship to millions of users. According to the GNU <a class="inherit-anchor underline link-highligt" href="https://www.gnu.org/software/coreutils/">website</a>:
                             </p>
 
                             <blockquote class="cite"><i>
@@ -83,7 +83,7 @@
                             </blockquote>
 
                             <p class="lh-1">
-                            This package provides utilities which have become synonymous with Linux to many - the likes of <q class="blueish">ls</q>, <q class="blueish">cp</q>, and <q class="blueish">mv</q>. In recent years, there has been an effort to reimplement this suite of tools in Rust, with the goal of reaching 100% compatibility with the existing tools. Similar projects, like sudo-rs, aim to replace key security-critical utilities with more modern, memory-safe alternatives.
+                            This package provides utilities which have become synonymous with Linux to many - the likes of <q class="blueish">ls</q>, <q class="blueish">cp</q>, and <q class="blueish">mv</q>. In recent years, there has been an <a href="https://uutils.github.io/" class="inherit-anchor underline link-highligt">effort</a> to reimplement this suite of tools in Rust, with the goal of reaching 100% compatibility with the existing tools. Similar projects, like <a href="https://github.com/trifectatechfoundation/sudo-rs" class="inherit-anchor underline link-highligt">sudo-rs</a>, aim to replace key security-critical utilities with more modern, memory-safe alternatives.
                             Starting with Ubuntu 25.10, my goal is to adopt some of these modern implementations as the default. My immediate goal is to make uutils’ coreutils implementation the default in Ubuntu 25.10, and subsequently in our next Long Term Support (LTS) release, Ubuntu 26.04 LTS, if the conditions are right.
                             </p>
 
@@ -97,7 +97,7 @@
                             </p>
 
                             <p class="lh-1">
-                            I recently read an article about targeting foundational software with Rust in 2025. Among other things, the article asserts that “foundational software needs performance, reliability — and productivity”. If foundational software fails, so do all of the other layers built on top. If foundational packages have performance bottlenecks, they become a floor on the performance achievable by the layers above.
+                            I recently read an <a href="https://smallcultfollowing.com/babysteps/blog/2025/03/10/rust-2025-intro/" class="inherit-anchor underline link-highligt">article</a> about targeting foundational software with Rust in 2025. Among other things, the article asserts that “foundational software needs performance, reliability — and productivity”. If foundational software fails, so do all of the other layers built on top. If foundational packages have performance bottlenecks, they become a floor on the performance achievable by the layers above.
                             </p>
 
                             <p class="lh-1">
@@ -105,11 +105,11 @@
                             </p>
 
                             <p class="lh-1">
-                            There are lots of ways to achieve this: we can provide long term support for projects like Kubernetes, we can assure the code we write, and we can strive to achieve compliance with safety-centric standards, but another is by shipping software with the values of safety, soundness, correctness and resilience at their core.
+                            There are lots of ways to achieve this: we can provide <a href="https://canonical.com/blog/12-year-lts-for-kubernetes" class="inherit-anchor underline link-highligt">long term support for projects like Kubernetes</a>, we can <a href="https://canonical.com/blog/canonicals-commitment-to-quality-management" class="inherit-anchor underline link-highligt">assure the code we write</a>, and we can <a href="https://canonical.com/blog/canonical-achieves-iso-21434-certification" class="inherit-anchor underline link-highligt">strive to achieve compliance with safety-centric standards</a>, but another is by shipping software with the values of safety, soundness, correctness and resilience at their core.
                             </p>
 
                             <p class="lh-1">
-                            That’s not to throw shade on the existing implementations, of course. Many of these tools have been stable for many years, quietly improving performance and fixing bugs. A lovely side benefit of working on newer implementations, is that it sometimes facilitates improvements in the original upstream projects, too!
+                            That’s not to throw shade on the existing implementations, of course. Many of these tools have been stable for many years, quietly improving performance and fixing bugs. A lovely side benefit of working on newer implementations, is that it sometimes <a href="https://ferrous-systems.com/blog/testing-sudo-rs/" class="inherit-anchor underline link-highligt">facilitates improvements</a> in the original upstream projects, too!
                             </p>
 
                             <p class="lh-1">
@@ -121,7 +121,7 @@
                             </h2>
 
                             <p class="lh-1">
-                            I did my homework before writing this post. I wanted to see how easy it was for me to live with these newer implementations and get a sense of their readiness for prime-time within the distribution. I also wanted a means of toggling between implementations so that I could easily switch back should I run into incompatibilities - and so oxidizr was born!
+                            I did my homework before writing this post. I wanted to see how easy it was for me to live with these newer implementations and get a sense of their readiness for prime-time within the distribution. I also wanted a means of toggling between implementations so that I could easily switch back should I run into incompatibilities - and so <a href="https://github.com/jnsgruk/oxidizr" class="inherit-anchor underline link-highligt"><q class="blueish">oxidizr</q></a> was born!
                             </p>
 
                             <blockquote class="cite"><i><q>oxidizr is a command-line utility for managing system experiments that replace traditional Unix utilities with modern Rust-based alternatives on Ubuntu systems.</q></i></blockquote>
