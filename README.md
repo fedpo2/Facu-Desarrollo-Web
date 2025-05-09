@@ -4,14 +4,14 @@
 ### Clase 2
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%202/)
 
-[Referenicia](https://www.nytimes.com/es/2025/04/21/espanol/mundo/quien-sera-nuevo-papa.html)
+[Referencia](https://www.nytimes.com/es/2025/04/21/espanol/mundo/quien-sera-nuevo-papa.html)
 
 ### Clase 3
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%203/)
 
-[Referenicia](https://www.nytimes.com/es/2025/04/21/espanol/mundo/quien-sera-nuevo-papa.html)
+[Referencia](https://www.nytimes.com/es/2025/04/21/espanol/mundo/quien-sera-nuevo-papa.html)
 
 ### Clase 4
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%204/)
 
-[Referenicia](https://jnsgr.uk/2025/03/carefully-but-purposefully-oxidising-ubuntu)
+[Referencia](https://jnsgr.uk/2025/03/carefully-but-purposefully-oxidising-ubuntu)
