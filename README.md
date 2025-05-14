@@ -13,5 +13,19 @@
 
 ### Clase 4
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%204/)
+<details>
+  <summary>
+    imagen de referencia (pagina replica)
+  </summary>
+
+  ![image](https://github.com/user-attachments/assets/a6ea1d0f-fe92-44d0-aa58-b6315eb6267c)
+</details>
 
 [Referencia](https://jnsgr.uk/2025/03/carefully-but-purposefully-oxidising-ubuntu)
+<details>
+  <summary>
+    imagen de referencia (pagina referencia)
+  </summary>
+
+  ![image](https://github.com/user-attachments/assets/e1c648e7-64ad-4fd4-bb2f-7ce5ca6c343d)
+</details>
