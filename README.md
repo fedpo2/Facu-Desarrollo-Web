@@ -30,3 +30,7 @@
 <img src="https://github.com/user-attachments/assets/e1c648e7-64ad-4fd4-bb2f-7ce5ca6c343d" alt="img">
 
 </details>
+
+### Clase 5
+clase 4 pero usando media query para que la pagina se adapte a los diferentes tamaños de viewport.
+[Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%205/)
