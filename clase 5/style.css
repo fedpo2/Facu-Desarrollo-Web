@@ -87,8 +87,15 @@
 }
 
 .s2_3 {
-    max-width: 70%;
+    max-width: 100%;
 }
+
+@media (min-width: 1024px) {
+    .s2_3{
+        max-width: 70%;
+    }
+}
+
 
 .border-left {
     border-left: 1px #374151 solid;
@@ -286,12 +293,12 @@ q::after {
     display: block;
 }
 
-@media (min-width: 640px){
+@media (min-width: 768px){
     .lg-d-none{
         display:none;
     }
 }
-@media (min-width: 640px){
+@media (min-width: 768px){
     .sm-d-none{
         display:flex;
     }
