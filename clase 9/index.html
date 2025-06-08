@@ -108,32 +108,40 @@
                             <button style="background-color:red" onclick="closeDialog()">Cerrar</button>
                         </dialog>
                         <form class="form-control" onsubmit="return handlesubmit(event)">
+                            <h2 id="tituloForm" class="text-center mt-0">
+                                HOLA <span id="spanForm"></span>
+                            </h2>
                             <div class="row">
                                 <div class="col md-input">
-                                    <input name="NombreCompleto" id="NombreCompleto" type="text" required/>
+                                    <input name="NombreCompleto" id="NombreCompleto" type="text" required
+                                           oninput="spanForm.innerHTML = NombreCompleto.value"/>
                                     <label for="NombreCompleto">
                                         Nombre Completo
                                     </label>
+                                    <span id="errornombre"></span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Email" id="Email" type="email" required/>
                                     <label for="Email">
                                         Email
                                     </label>
+                                    <span id="erroremail"></span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col md-input">
                                     <input name="Contraseña" id="Contrasena1" type="password" minlength="8" required/>
-                            <label for="Contraseña">
-                                Contraseña
-                            </label>
+                                    <label for="Contraseña">
+                                        Contraseña
+                                    </label>
+                                    <span id="errorcontra1"></span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Contra2" id="Contrasena2" type="password" minlength="8" required/>
                                     <label for="Contra2">
                                         Repetir Contraseña
                                     </label>
+                                    <span id="errorcontra2"></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -142,12 +150,14 @@
                                     <label for="Edad">
                                 Edad
                                     </label>
+                                    <span id="erroredad"></span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Telefono" id="Telefono" type="tel" required/>
                                     <label for="Telefono">
                                         Telefono
                                     </label>
+                                    <span id="errortelefono"></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -156,12 +166,14 @@
                                     <label for="Direccion">
                                         Direccion
                                     </label>
+                                    <span id="errordireccion"></span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Ciudad" id="Ciudad" type="text" value="" required/>
-                                    <label for="Cuidad">
+                                    <label for="Ciudad">
                                 Ciudad
                                     </label>
+                                    <span id="errorciudad"></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -170,12 +182,14 @@
                                     <label for="CodPost">
                                         Codigo Postal
                                     </label>
+                                    <span id="errorpost"></span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Dni" id="Dni" type="number" min="1" step="1" value="0" required/>
                                     <label for="Dni">
                                         Dni
                                     </label>
+                                    <span id="errordni"></span>
                                 </div>
                             </div>
                             <div>
@@ -184,7 +198,7 @@
                                 </button>
                             </div>
                         </form>
-                        
+
                         <blockquote class="cite">
                             <i>
                                 <q>This article was originally posted <a href="https://discourse.ubuntu.com/t/carefully-but-purposefully-oxidising-ubuntu/56995" class="inherit-anchor underline link-highligt">on the Ubuntu Discourse,</a> and is reposted here. I welcome comments and further discussion in that thread.</q>
