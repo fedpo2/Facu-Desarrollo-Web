@@ -101,11 +101,17 @@
 
                 <div class="flex flex-row">
                     <div class="flex flex-col s2_3">
+                        <dialog id="okdialog" style="z-index: 99">
+                            <h3>INFO</h3>
+                            <ul id="oklist">
+                            </ul>
+                            <button style="background-color:rebeccapurple" onclick="closeDialog('ok')">Cerrar</button>
+                        </dialog>
                         <dialog id="errordialog" style="z-index: 99">
                             <h3>Errores en el formulario</h3>
                             <ul id="errorlist">
                             </ul>
-                            <button style="background-color:red" onclick="closeDialog()">Cerrar</button>
+                            <button style="background-color:red" onclick="closeDialog('err')">Cerrar</button>
                         </dialog>
                         <form class="form-control" onsubmit="return handlesubmit(event)">
                             <h2 id="tituloForm" class="text-center mt-0">
@@ -114,18 +120,19 @@
                             <div class="row">
                                 <div class="col md-input">
                                     <input name="NombreCompleto" id="NombreCompleto" type="text" required
-                                           oninput="spanForm.innerHTML = NombreCompleto.value"/>
+                                           oninput="spanForm.innerHTML = NombreCompleto.value"
+                                           onblur="validateErr('nombre')"/>
                                     <label for="NombreCompleto">
                                         Nombre Completo
-                                    </label>
-                                    <span id="errornombre"></span>
+                                    </label> <br />
+                                    <span hidden id="errornombre">Nombre completo inválido. Debe tener más de 6 letras y al menos un espacio.</span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Email" id="Email" type="email" required/>
                                     <label for="Email">
                                         Email
-                                    </label>
-                                    <span id="erroremail"></span>
+                                    </label> <br />
+                                    <span hidden id="erroremail">Email inválido.</span>
                                 </div>
                             </div>
                             <div class="row">
@@ -133,15 +140,15 @@
                                     <input name="Contraseña" id="Contrasena1" type="password" minlength="8" required/>
                                     <label for="Contraseña">
                                         Contraseña
-                                    </label>
-                                    <span id="errorcontra1"></span>
+                                    </label> <br />
+                                    <span hidden id="errorcontra1">Contraseña inválida. Debe tener al menos 8 caracteres y contener letras y números.</span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Contra2" id="Contrasena2" type="password" minlength="8" required/>
                                     <label for="Contra2">
                                         Repetir Contraseña
-                                    </label>
-                                    <span id="errorcontra2"></span>
+                                    </label> <br />
+                                    <span hidden id="errorcontra2">Las contraseñas no coinciden.</span>
                                 </div>
                             </div>
                             <div class="row">
@@ -149,15 +156,15 @@
                                     <input type="number" id="Edad" name="Edad" min="1" step="1" max="120" required>
                                     <label for="Edad">
                                 Edad
-                                    </label>
-                                    <span id="erroredad"></span>
+                                    </label> <br />
+                                    <span hidden id="erroredad">Edad inválida. Debe ser un número mayor o igual a 18.</span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Telefono" id="Telefono" type="tel" required/>
                                     <label for="Telefono">
                                         Telefono
-                                    </label>
-                                    <span id="errortelefono"></span>
+                                    </label> <br />
+                                    <span hidden id="errortelefono">Edad inválida. Debe ser un número mayor o igual a 18.</span>
                                 </div>
                             </div>
                             <div class="row">
@@ -165,15 +172,15 @@
                                     <input name="Direccion" id="Direccion" type="text" value="" required/>
                                     <label for="Direccion">
                                         Direccion
-                                    </label>
-                                    <span id="errordireccion"></span>
+                                    </label> <br />
+                                    <span hidden id="errordireccion">Dirección inválida. Debe tener al menos 5 caracteres, incluir letras, números y un espacio.</span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Ciudad" id="Ciudad" type="text" value="" required/>
                                     <label for="Ciudad">
                                 Ciudad
-                                    </label>
-                                    <span id="errorciudad"></span>
+                                    </label> <br />
+                                    <span hidden id="errorciudad">Ciudad inválida. Debe tener al menos 3 caracteres.</span>
                                 </div>
                             </div>
                             <div class="row">
@@ -181,15 +188,15 @@
                                     <input name="CodPost" id="CodPost" type="text" value="" required/>
                                     <label for="CodPost">
                                         Codigo Postal
-                                    </label>
-                                    <span id="errorpost"></span>
+                                    </label> <br />
+                                    <span hidden id="errorpost">Código postal inválido. Debe tener al menos 3 caracteres.</span>
                                 </div>
                                 <div class="col md-input">
                                     <input name="Dni" id="Dni" type="number" min="1" step="1" value="0" required/>
                                     <label for="Dni">
                                         Dni
-                                    </label>
-                                    <span id="errordni"></span>
+                                    </label> <br />
+                                    <span hidden id="errordni">DNI inválido. Debe tener 7 u 8 dígitos.</span>
                                 </div>
                             </div>
                             <div>

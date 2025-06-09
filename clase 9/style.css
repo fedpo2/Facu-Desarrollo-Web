@@ -430,6 +430,11 @@ q::after {
   transition: 0.2s ease all;
 }
 
+.md-input span {
+    font-size: 8px;
+    color:red;
+}
+
 .md-input input:focus ~ label,
 .md-input input:valid ~ label {
   top: -20px;
@@ -463,7 +468,7 @@ q::after {
 }
 
 
-#error-dialog {
+dialog {
     border: none;
     border-radius: 8px;
     padding: 1rem 1.5rem;
