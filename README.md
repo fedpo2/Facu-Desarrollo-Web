@@ -34,3 +34,7 @@
 ### Clase 5
 clase 4 pero usando media query para que la pagina se adapte a los diferentes tamaños de viewport.
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%205/)
+
+### Clase 8
+Ejercicios de js
+[Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%208/)
