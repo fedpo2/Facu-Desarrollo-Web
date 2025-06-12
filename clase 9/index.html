@@ -120,8 +120,7 @@
                             <div class="row">
                                 <div class="col md-input">
                                     <input name="NombreCompleto" id="NombreCompleto" type="text" required
-                                           oninput="spanForm.innerHTML = NombreCompleto.value"
-                                           onblur="validateErr('nombre')"/>
+                                           oninput="spanForm.innerHTML = NombreCompleto.value"/>
                                     <label for="NombreCompleto">
                                         Nombre Completo
                                     </label> <br />
@@ -164,7 +163,7 @@
                                     <label for="Telefono">
                                         Telefono
                                     </label> <br />
-                                    <span hidden id="errortelefono">Edad inválida. Debe ser un número mayor o igual a 18.</span>
+                                    <span hidden id="errortelefono">Telefono inválido. Debe tener 7 digitos minimo.</span>
                                 </div>
                             </div>
                             <div class="row">
