@@ -38,3 +38,8 @@ clase 4 pero usando media query para que la pagina se adapte a los diferentes ta
 ### Clase 8
 Ejercicios de js
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%208/)
+
+### Clase 9
+[Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%209/)
+
+Validaciones form
