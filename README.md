@@ -43,3 +43,8 @@ Ejercicios de js
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%209/)
 
 Validaciones form
+
+### Clase 10
+[Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%2010/)
+
+Fetch y modals
