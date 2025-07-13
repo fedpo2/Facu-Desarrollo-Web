@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Clase 11</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css" type="text/css" media="screen" />
+
+    </head>
+    <body>
+
+        <div class="flex gap-2">
+            <button onclick="cambiarModo()" class="mb-1">
+                <img id="sol" alt="Modo Claro" src="./sol.svg"/>
+                <img id="luna" alt="Modo Oscuro" src="./luna.svg"/>
+            </button>
+            <h1 class="m-0">Demostracion API rick & Morty</h1>
+        </div>
+
+        <hr style="margin-top: 1rem;" />
+
+        <div class="justify-center dialogo">
+            <h2>Mostrar Personajes</h2>
+            <hr class="mt-1" />
+            <p class="mb-1">El siguiente boton trae la pagina 2 de todos los personajes desde la api de rick and morty
+            <button onclick="obtenerPersonajes()">Toggle Personajes</button>
+            </p>
+
+            <ul id="personajes" hidden></ul>
+        </div>
+        <hr />
+        </div>
+        <div class="justify-center dialogo">
+            <h2>Buscar Personajes</h2>
+            <hr class="mt-1" />
+            <p>el siguiente form manda un GET con parametros en la url para filtrar la busqueda de personajes:
+            </p>
+                <form class="flex-col border p-1 rounded-md mt-1" onsubmit="busquedaPersonajes(event)" style="width: fit-content;">
+                    <div class="mt-1">
+                        <input id="nombre" name="name" type="text" value=""  />
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="mt-1">
+                        <select id="estado" name="status">
+                            <option value=""></option>
+                            <option value="alive">Alive</option>
+                            <option value="dead">Dead</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                        <label for="status">Estado</label>
+                    </div>
+                    <div class="mt-1">
+                        <input id="especies" name="species" type="text" value="" />
+                        <label for="species">Especies</label>
+                    </div>
+                    <div class="mt-1">
+                        <input id="tipo" name="type" type="text" value="" />
+                        <label for="type">Tipo</label>
+                    </div>
+                    <div class="mt-1">
+                        <select id="genero" name="gender">
+                            <option value=""></option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="genderless">Genderless</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                        <label for="gender">Genero</label>
+                    </div>
+                    <hr />
+                    <button type="submit" class="mb-1">Buscar</button>
+                </form>
+                <hr />
+                <ul id="personajes-buscar" hidden class="mt-1"></ul>
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
