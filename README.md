@@ -48,3 +48,8 @@ Validaciones form
 [Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%2010/)
 
 Fetch y modals
+
+### Clase 11
+[Link pages](https://fedpo2.github.io/Facu-Desarrollo-Web/clase%2011/)
+
+busqueda con filtros usando la API de Rick y Morty, 
